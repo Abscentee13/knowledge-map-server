@@ -1,25 +1,23 @@
-//const userController = require('./controllers/userController');
-const subjectsController = require('../controllers/subjectsController');
 
 const endpoints = [
     {
         path: '/api/users',
         method: 'GET',
-      //  controller: userController.getUsers,
-        controller: subjectsController.getSubjects,///////////
+        table: 'users',
+        fields: '',
     },
     {
-        path: '/api/users',
+        path: '/api/users-create',
         method: 'POST',
-      //  controller: userController.createUser,
-        controller: subjectsController.getSubjects,/////////
+        table: 'users',
+        fields: '',
     },
     {
         path: '/api/subjects',
         method: 'GET',
-        controller: subjectsController.getSubjects,
+        table: 'subjects',
+        fields: '',
     },
-    // Додавайте сюди інші ендпоїнти
 ];
 
 module.exports = endpoints;

@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-require('dotenv').config(); // Завантажте дані з файлу .env
+require('dotenv').config();
 
 const DB_HOST = process.env.DB_HOST;
 const DB_USER = process.env.DB_USER;
