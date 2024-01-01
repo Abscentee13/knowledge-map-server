@@ -1,7 +1,9 @@
 const dbConnection = require("../config/database");
 
 const queryResult = (table, field, callback) => {
-    const sqlQuery = 'SELECT * FROM ' + table;
+
+
+    const sqlQuery = 'SELECT * FROM km_' + table;
     dbConnection.query(sqlQuery, (error, results, fields) => {
         if (error) {
             console.error('Помилка виконання запиту:', error);
